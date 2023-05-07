@@ -15,13 +15,14 @@ const BoxEach = styled.div`
 const BoxText = styled.p`
   font-size: 30px;
   font-weight: 500;
+  color: ${(props) => (props.boxText)}
 `;
 
 const Box = (props) => {
   return (
     <>
       <BoxEach boxColor={props.boxColor}>
-        <BoxText></BoxText>
+        <BoxText>{props.boxText}</BoxText>
       </BoxEach>
     </>
   );
